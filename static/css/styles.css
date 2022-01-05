@@ -1,0 +1,50 @@
+body {
+  padding: 30px;
+}
+h2 {
+  font-size: 320%;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,167,81,1) 90%, rgba(0,212,255,1) 100%); 
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
+  background: green;
+  color:honeydew;
+}
+button {
+  background-color: grey;
+  border: 1px solid green;
+  color: lightyellow
+
+}
+.search-input {
+  text-align: center;
+}
+.inputbar {
+  margin: 20px;
+  padding: 20px;
+  width: 40%;
+  background: lightyellow;
+  border: 1px solid green;
+}
+.fadingdiv {
+  opacity: 0;
+  margin-top:300px;
+}
+.m-fadeIn {
+  margin: auto;
+  width: 60%;
+  word-wrap: break-word;
+  border: 1px solid green;
+  text-align: center;
+  padding: 10px;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0.5s linear 1.5s, opacity 300ms;
+}
+.review {
+  background: lightyellow;
+  color: grey
+}

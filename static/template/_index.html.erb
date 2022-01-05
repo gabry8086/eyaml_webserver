@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      <%= File.read('static/css/styles.css') %>
+    </style>
+  </head>
+  <body>
+    <div class="search-input">
+      <form id="form" action="/encrypt" target="_self" method="post"><h2>Eyaml Key Encryption as a Service</h2>
+        <input type="text" name="inputbar" id="inputbar" class="inputbar" onkeyup="manage(this)" Placeholder="Submit a valid string to Encrypt"/>
+        <button type="submit" id="tog" disabled >Submit to Encrypt</button>
+      </form>
+    </div>
+    <div id="fadingdiv" class="fadingdiv <%= divclass %>">
+      <p>Encrypted String for <span class="review"><%= urldecoded %></span> is:</p> <h3 id="encstring"><%= encrypted %></h3>
+      <button onclick="CopyToClipboard('encstring');alert('String copied to clipboard');return false;">Copy &#128203;</button>
+    </div>
+    <script>
+      <%= File.read('static/js/buttons.js') %>
+    </script>
+  </body>
+</html>
+
